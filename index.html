@@ -8,6 +8,20 @@
     <meta name="description" content="ページの説明">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
 </head>
 
 <body>
@@ -16,7 +30,11 @@
             <div id="header-container">
                 <div id="head-inner">
                     <h1>あなたのＨＰタイトル</h1>
-                    <p class="description">あなたのＨＰの説明文</p>
+                    <p class="description">
+                        \[
+                        F(s) = \int_0^\infty f(t)e^{-st}\mathrm{d}t
+                        \]
+                    </p>
                 </div>
             </div>
         </header>
