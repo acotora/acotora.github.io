@@ -22,6 +22,15 @@
     displayIndent: "2em"
   });
 </script>
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+        integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+        crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 
 <body>
@@ -31,9 +40,7 @@
                 <div id="head-inner">
                     <h1>あなたのＨＰタイトル</h1>
                     <p class="description">
-                        \begin{align}
-                        F(s) = \int_0^\infty f(t)e^{-st}\mathrm{d}t
-                        \end{align}
+                        \[ c = \pm\sqrt{a^2 + b^2} \]
                     </p>
                 </div>
             </div>
